@@ -8,57 +8,65 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg,#ffe6f2,#fff5f8);
-    overflow-x: hidden;
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ffe6f2,#fff5f8);
+    overflow-x:hidden;
 }
 
 /* Heading */
-h1 {
+h1{
     text-align:center;
     font-family:'Pacifico';
     margin-top:40px;
     color:#ff4d88;
     font-size:42px;
-    animation: fadeDown 1.5s ease;
+}
+
+/* Friendship Animation */
+.friendship-animation{
+    text-align:center;
+    font-size:50px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
 }
 
 /* Message */
-.message {
+.message{
     max-width:750px;
     margin:20px auto;
     text-align:center;
     padding:25px;
     background:rgba(255,255,255,0.6);
-    backdrop-filter: blur(10px);
     border-radius:20px;
-    line-height:1.8;
-    animation: fadeUp 2s ease;
 }
 
-/* Memory Section */
-.memory-section {
+/* Photos */
+.memory-section{
     margin:60px 20px;
     text-align:center;
 }
 
-.memory-title {
+.memory-title{
     font-family:'Pacifico';
     color:#ff4d88;
     font-size:26px;
     margin-bottom:20px;
 }
 
-.photo-row {
+.photo-row{
     display:flex;
     justify-content:center;
     gap:25px;
     flex-wrap:wrap;
 }
 
-.photo-card {
+.photo-card{
     background:white;
     padding:12px;
     width:220px;
@@ -67,42 +75,29 @@ h1 {
     transition:0.4s;
 }
 
-.photo-card img {
+.photo-card img{
     width:100%;
     border-radius:10px;
 }
 
-.photo-card p {
-    margin-top:8px;
-    font-size:13px;
-    color:#666;
-}
-
-.photo-card:hover {
+.photo-card:hover{
     transform:scale(1.08);
 }
 
-/* Question Section */
-.question-section {
+/* Question */
+.question-section{
     text-align:center;
     margin:80px 0;
 }
 
-.question-image {
+.question-image{
     width:170px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.3);
     margin-bottom:20px;
 }
 
-.question-text {
-    font-size:26px;
-    color:#ff4d88;
-    font-weight:bold;
-}
-
 /* Buttons */
-button {
+button{
     padding:12px 28px;
     font-size:18px;
     border-radius:30px;
@@ -112,49 +107,21 @@ button {
     transition:0.3s;
 }
 
-#yesBtn {
+#yesBtn{
     background:#ff4d88;
     color:white;
 }
 
-#yesBtn:hover {
-    transform:scale(1.1);
-}
-
-#noBtn {
+#noBtn{
     background:#999;
     color:white;
     position:relative;
 }
 
-/* Floating hearts */
-.heart {
+/* Modal */
+.modal{
     position:fixed;
-    bottom:-10px;
-    font-size:20px;
-    animation:floatUp 6s linear infinite;
-    opacity:0.8;
-}
-
-@keyframes floatUp {
-    0% {transform:translateY(0); opacity:1;}
-    100% {transform:translateY(-900px); opacity:0;}
-}
-
-@keyframes fadeUp {
-    from {opacity:0; transform:translateY(30px);}
-    to {opacity:1; transform:translateY(0);}
-}
-
-@keyframes fadeDown {
-    from {opacity:0; transform:translateY(-30px);}
-    to {opacity:1; transform:translateY(0);}
-}
-
-/* Modal Styling */
-.modal {
-    position:fixed;
-    top:0; left:0;
+    top:0;left:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.6);
@@ -164,18 +131,26 @@ button {
     z-index:999;
 }
 
-.modal-content {
+.modal-content{
     background:white;
     padding:30px;
     border-radius:20px;
     text-align:center;
     width:90%;
     max-width:350px;
-    animation:fadeUp 0.5s ease;
 }
 
-.modal-content h2 {
-    color:#ff4d88;
+/* Floating Hearts */
+.heart{
+    position:fixed;
+    bottom:-10px;
+    font-size:20px;
+    animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-900px);}
 }
 </style>
 </head>
@@ -184,66 +159,103 @@ button {
 
 <h1>Happy Galentine’s Day 💖</h1>
 
+<div class="friendship-animation">
+👯‍♀️😂👯‍♀️
+</div>
+
 <div class="message">
 Humari dosti koi normal dosti nahi hai…<br>
 Yeh lifetime subscription hai 😌💖<br>
 Let's celebrate it together heheeee!! 💌✨
 </div>
 
-<!-- Chaos Era -->
+<!-- Photos -->
+
 <div class="memory-section">
 <div class="memory-title">😂 Our Chaos Era</div>
 <div class="photo-row">
 <div class="photo-card">
 <img src="1.jpeg">
-<p>Video calls where our worst pictures are clicked !!!</p>
 </div>
-
 <div class="photo-card">
 <img src="2.jpeg">
-<p>Gossips who says no ??</p>
 </div>
 </div>
 </div>
 
-<!-- Chingu Section -->
 <div class="memory-section">
 <div class="memory-title">US Chingu 💕</div>
 <div class="photo-row">
 <div class="photo-card">
 <img src="3.jpeg">
-<p>No guy deserves a girllll, look at us 😌</p>
 </div>
-
 <div class="photo-card">
 <img src="4.jpeg">
-<p>Golden hangouts!!! ✨</p>
 </div>
 </div>
 </div>
 
 <!-- Question -->
+
 <div class="question-section">
 <img src="5.jpeg" class="question-image">
+<h2>U can't walk out  this friendship samji na saali !!!
+    So are we celebrating Galentine or not?? 💕</h2>
 
-<div class="question-text">
-So U guys want to celebrate galentine or not!! 💕
-</div>
-
-<button id="yesBtn" onclick="alert('Best Decision Ever 😌💖')">YES 💖</button>
-<button id="noBtn" onmouseover="this.style.transform='translate('+(Math.random()*200-100)+'px,'+(Math.random()*200-100)+'px)'">NO 🙈</button>
-
+<button id="yesBtn" onclick="openSnackModal()">YES 💖</button>
+<button id="noBtn" onmouseover="moveButton()">NO 🙈</button>
 </div>
 
 <script>
-setInterval(() => {
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = "💖";
-    heart.style.left = Math.random() * 100 + "vw";
+
+/* Move NO button */
+function moveButton(){
+    const btn=document.getElementById("noBtn");
+    btn.style.transform=`translate(${Math.random()*200-100}px,${Math.random()*200-100}px)`;
+}
+
+/* STEP 1: Snack demand FIRST */
+function openSnackModal(){
+    const modal=document.createElement("div");
+    modal.className="modal";
+    modal.innerHTML=`
+        <div class="modal-content">
+            <h2>WAITTT 😌✋</h2>
+            <p>First send Ferrero Rocher 🍫!,<br>
+            Snacks 🍟, Ice Cream 🍦<br>
+            Then only we proceed 😏💅</p>
+            <button onclick="showMeme()">YES I WILL SEND 😭</button>
+        </div>
+    `;
+    document.body.appendChild(modal);
+}
+
+/* STEP 2: Show Meme AFTER they agree */
+function showMeme(){
+    document.querySelector(".modal").remove();
+    const modal=document.createElement("div");
+    modal.className="modal";
+    modal.innerHTML=`
+        <div class="modal-content">
+            <h2>APPROVEDDD !!!😌💖</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFUSYBMbQOerZZ1-wzSNKI1-MBFwGdqYVlw&s" style="width:100%;border-radius:15px;">
+            <p>Galentine Celebration Officially ON 🎉✨</p>
+            <button onclick="this.closest('.modal').remove()">Close 💕</button>
+        </div>
+    `;
+    document.body.appendChild(modal);
+}
+
+/* Floating hearts */
+setInterval(()=>{
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerHTML="💖";
+    heart.style.left=Math.random()*100+"vw";
     document.body.appendChild(heart);
-    setTimeout(() => heart.remove(), 6000);
-}, 900);
+    setTimeout(()=>heart.remove(),6000);
+},1000);
+
 </script>
 
 </body>
