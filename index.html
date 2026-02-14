@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> #OUR Friendship 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#ffe6f2,#fff5f8);
+    overflow-x: hidden;
+}
+
+/* Heading */
+h1 {
+    text-align:center;
+    font-family:'Pacifico';
+    margin-top:40px;
+    color:#ff4d88;
+    font-size:42px;
+    animation: fadeDown 1.5s ease;
+}
+
+/* Message */
+.message {
+    max-width:750px;
+    margin:20px auto;
+    text-align:center;
+    padding:25px;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    line-height:1.8;
+    animation: fadeUp 2s ease;
+}
+
+/* Memory Section */
+.memory-section {
+    margin:60px 20px;
+    text-align:center;
+}
+
+.memory-title {
+    font-family:'Pacifico';
+    color:#ff4d88;
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+.photo-row {
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.photo-card {
+    background:white;
+    padding:12px;
+    width:220px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.photo-card img {
+    width:100%;
+    border-radius:10px;
+}
+
+.photo-card p {
+    margin-top:8px;
+    font-size:13px;
+    color:#666;
+}
+
+.photo-card:hover {
+    transform:scale(1.08);
+}
+
+/* Question Section */
+.question-section {
+    text-align:center;
+    margin:80px 0;
+}
+
+.question-image {
+    width:170px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    margin-bottom:20px;
+}
+
+.question-text {
+    font-size:26px;
+    color:#ff4d88;
+    font-weight:bold;
+}
+
+/* Buttons */
+button {
+    padding:12px 28px;
+    font-size:18px;
+    border-radius:30px;
+    border:none;
+    cursor:pointer;
+    margin:15px;
+    transition:0.3s;
+}
+
+#yesBtn {
+    background:#ff4d88;
+    color:white;
+}
+
+#yesBtn:hover {
+    transform:scale(1.1);
+}
+
+#noBtn {
+    background:#999;
+    color:white;
+    position:relative;
+}
+
+/* Floating hearts */
+.heart {
+    position:fixed;
+    bottom:-10px;
+    font-size:20px;
+    animation:floatUp 6s linear infinite;
+    opacity:0.8;
+}
+
+@keyframes floatUp {
+    0% {transform:translateY(0); opacity:1;}
+    100% {transform:translateY(-900px); opacity:0;}
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform:translateY(30px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeDown {
+    from {opacity:0; transform:translateY(-30px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* Modal Styling */
+.modal {
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.modal-content {
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:90%;
+    max-width:350px;
+    animation:fadeUp 0.5s ease;
+}
+
+.modal-content h2 {
+    color:#ff4d88;
+}
+
+.modal-content button {
+    margin-top:15px;
+    background:#ff4d88;
+    color:white;
+}
+/* Friendship Animation */
+
+.friendship-animation {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    animation: fadeUp 2s ease;
+}
+
+.girl {
+    display: inline-block;
+    animation: bounceLaugh 1.5s infinite ease-in-out;
+}
+
+.girl:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.girl:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounceLaugh {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+/* Sparkle Animation */
+.sparkle {
+    position: absolute;
+    font-size: 20px;
+    animation: sparkleFloat 3s infinite ease-in-out;
+}
+
+@keyframes sparkleFloat {
+    0% { opacity:0; transform: translateY(10px); }
+    50% { opacity:1; transform: translateY(-10px); }
+    100% { opacity:0; transform: translateY(10px); }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Happy Galentine’s Day 💖</h1>
+<div class="friendship-animation">
+    <span class="girl">👯‍♀️</span>
+    <span class="girl">😂</span>
+    <span class="girl">👯‍♀️</span>
+</div>
+
+
+<div class="message">
+“Humari dosti koi normal dosti nahi hai…
+Yeh lifetime subscription hai 😌💖
+Let's celebrate it together heheeee!! 💌✨
+</div>
+
+<!-- Memory Sections -->
+
+<div class="memory-section">
+<div class="memory-title">😂 Our Chaos Era</div>
+<div class="photo-row">
+<div class="photo-card">
+<img src= "C:\Users\NANDINI\OneDrive\Pictures\New folder\WhatsApp Image 2026-02-14 at 1.28.59 PM (1).jpeg">
+<p>Video calls where our worst pictures are clicked !!!</p>
+</div>
+<div class="photo-card">
+<img src="C:\Users\NANDINI\OneDrive\Pictures\New folder\WhatsApp Image 2026-02-14 at 1.29.00 PM (1).jpeg">
+<p>Gossips who says no ? ?</p>
+</div>
+</div>
+</div>
+
+<div class="memory-section">
+<div class="memory-title"> US Chingu !! </div>
+<div class="photo-row">
+<div class="photo-card">
+<img src="C:\Users\NANDINI\OneDrive\Pictures\New folder\WhatsApp Image 2026-02-14 at 1.29.01 PM (1).jpeg">
+<p>No guy deserves a girllll , look at us, btw when will be our baddie era !!! ???</p>
+</div>
+<div class="photo-card">
+<img src="C:\Users\NANDINI\OneDrive\Pictures\New folder\WhatsApp Image 2026-02-14 at 1.28.51 PM (1).jpeg">
+<p>golden hangouts!!!</p>
+</div>
+</div>
+</div>
+
+<!-- Question -->
+
+<div class="question-section">
+<img src="C:\Users\NANDINI\OneDrive\Pictures\New folder\WhatsApp Image 2026-02-14 at 1.28.58 PM (2).jpeg" class="question-image">
+<div class="question-text">So u guys don't have option to walk off sabji na saali !! 
+So U guys want to celebrate galentine or not!!💕</div>
+
+<button id="yesBtn" onclick="openSnackModal()">YES 💖</button>
+<button id="noBtn" onmouseover="moveButton()">NO 🙈</button>
+</div>
+
+<script>
+
+/* Floating hearts */
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}, 900);
+
+/* NO button moves */
+function moveButton() {
+    const btn = document.getElementById("noBtn");
+    btn.style.transform = `translate(${Math.random()*300-150}px,${Math.random()*200-100}px)`;
+}
+
+/* Snack Demand Modal */
+function openSnackModal() {
+    const modal = document.createElement("div");
+    modal.className = "modal";
+
+    modal.innerHTML = `
+        <div class="modal-content">
+            <h2>WAITTT 😌✋</h2>
+            <p>Pehle Ferrero Rocher 🍫, Cake 🎂 aur Snacks 🍟 bhejo...<br>Tabhi official thank you milega 💅</p>
+            <button onclick="showMeme(this)">Deal Done 😌</button>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+}
+
+/* Meme Reveal */
+function showMeme(button) {
+    document.querySelector(".modal").remove();
+
+    const memeModal = document.createElement("div");
+    memeModal.className = "modal";
+
+    memeModal.innerHTML = `
+        <div class="modal-content">
+            <h2>Officially My Galentine 💖</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFUSYBMbQOerZZ1-wzSNKI1-MBFwGdqYVlw&s" style="width:100%; border-radius:15px;">
+            <p>Snacks approved 😂 Friendship confirmed ✨</p>
+            <button onclick="this.closest('.modal').remove()">Close 💕</button>
+        </div>
+    `;
+
+    document.body.appendChild(memeModal);
+
+    launchConfetti();
+}
+
+/* Confetti */
+function launchConfetti() {
+    for(let i=0;i<50;i++){
+        const heart=document.createElement("div");
+        heart.className="heart";
+        heart.innerHTML="💗";
+        heart.style.left=Math.random()*100+"vw";
+        document.body.appendChild(heart);
+        setTimeout(()=>heart.remove(),6000);
+    }
+}
+setInterval(() => {
+    const laugh = document.createElement("div");
+    laugh.className = "heart";
+    laugh.innerHTML = "😂";
+    laugh.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(laugh);
+    setTimeout(() => laugh.remove(), 5000);
+}, 2000);
+
+
+</script>
+
+</body>
+</html>
