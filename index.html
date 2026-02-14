@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> #OUR Friendship 💖</title>
+<title>#OUR Friendship 💖</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
 <style>
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -178,76 +177,20 @@ button {
 .modal-content h2 {
     color:#ff4d88;
 }
-
-.modal-content button {
-    margin-top:15px;
-    background:#ff4d88;
-    color:white;
-}
-/* Friendship Animation */
-
-.friendship-animation {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 50px;
-    animation: fadeUp 2s ease;
-}
-
-.girl {
-    display: inline-block;
-    animation: bounceLaugh 1.5s infinite ease-in-out;
-}
-
-.girl:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.girl:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-@keyframes bounceLaugh {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-10px); }
-    50% { transform: translateY(0); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(-5deg); }
-}
-
-/* Sparkle Animation */
-.sparkle {
-    position: absolute;
-    font-size: 20px;
-    animation: sparkleFloat 3s infinite ease-in-out;
-}
-
-@keyframes sparkleFloat {
-    0% { opacity:0; transform: translateY(10px); }
-    50% { opacity:1; transform: translateY(-10px); }
-    100% { opacity:0; transform: translateY(10px); }
-}
-
 </style>
 </head>
 
 <body>
 
 <h1>Happy Galentine’s Day 💖</h1>
-<div class="friendship-animation">
-    <span class="girl">👯‍♀️</span>
-    <span class="girl">😂</span>
-    <span class="girl">👯‍♀️</span>
-</div>
-
 
 <div class="message">
-“Humari dosti koi normal dosti nahi hai…
-Yeh lifetime subscription hai 😌💖
+Humari dosti koi normal dosti nahi hai…<br>
+Yeh lifetime subscription hai 😌💖<br>
 Let's celebrate it together heheeee!! 💌✨
 </div>
 
-<!-- Memory Sections -->
-
+<!-- Chaos Era -->
 <div class="memory-section">
 <div class="memory-title">😂 Our Chaos Era</div>
 <div class="photo-row">
@@ -255,41 +198,44 @@ Let's celebrate it together heheeee!! 💌✨
 <img src="1.jpeg">
 <p>Video calls where our worst pictures are clicked !!!</p>
 </div>
+
 <div class="photo-card">
 <img src="2.jpeg">
-<p>Gossips who says no ? ?</p>
+<p>Gossips who says no ??</p>
 </div>
 </div>
 </div>
 
+<!-- Chingu Section -->
 <div class="memory-section">
-<div class="memory-title"> US Chingu !! </div>
+<div class="memory-title">US Chingu 💕</div>
 <div class="photo-row">
 <div class="photo-card">
 <img src="3.jpeg">
-<p>No guy deserves a girllll , look at us, btw when will be our baddie era !!! ???</p>
+<p>No guy deserves a girllll, look at us 😌</p>
 </div>
+
 <div class="photo-card">
 <img src="4.jpeg">
-<p>golden hangouts!!!</p>
+<p>Golden hangouts!!! ✨</p>
 </div>
 </div>
 </div>
 
 <!-- Question -->
-
 <div class="question-section">
 <img src="5.jpeg" class="question-image">
-<div class="question-text">So u guys don't have option to walk off sabji na saali !! 
-So U guys want to celebrate galentine or not!!💕</div>
 
-<button id="yesBtn" onclick="openSnackModal()">YES 💖</button>
-<button id="noBtn" onmouseover="moveButton()">NO 🙈</button>
+<div class="question-text">
+So U guys want to celebrate galentine or not!! 💕
+</div>
+
+<button id="yesBtn" onclick="alert('Best Decision Ever 😌💖')">YES 💖</button>
+<button id="noBtn" onmouseover="this.style.transform='translate('+(Math.random()*200-100)+'px,'+(Math.random()*200-100)+'px)'">NO 🙈</button>
+
 </div>
 
 <script>
-
-/* Floating hearts */
 setInterval(() => {
     const heart = document.createElement("div");
     heart.className = "heart";
@@ -298,74 +244,7 @@ setInterval(() => {
     document.body.appendChild(heart);
     setTimeout(() => heart.remove(), 6000);
 }, 900);
-
-/* NO button moves */
-function moveButton() {
-    const btn = document.getElementById("noBtn");
-    btn.style.transform = `translate(${Math.random()*300-150}px,${Math.random()*200-100}px)`;
-}
-
-/* Snack Demand Modal */
-function openSnackModal() {
-    const modal = document.createElement("div");
-    modal.className = "modal";
-
-    modal.innerHTML = `
-        <div class="modal-content">
-            <h2>WAITTT 😌✋</h2>
-            <p>Pehle Ferrero Rocher 🍫, Cake 🎂 aur Snacks 🍟 bhejo...<br>Tabhi official thank you milega 💅</p>
-            <button onclick="showMeme(this)">Deal Done 😌</button>
-        </div>
-    `;
-
-    document.body.appendChild(modal);
-}
-
-/* Meme Reveal */
-function showMeme(button) {
-    document.querySelector(".modal").remove();
-
-    const memeModal = document.createElement("div");
-    memeModal.className = "modal";
-
-    memeModal.innerHTML = `
-        <div class="modal-content">
-            <h2>Officially My Galentine 💖</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFUSYBMbQOerZZ1-wzSNKI1-MBFwGdqYVlw&s" style="width:100%; border-radius:15px;">
-            <p>Snacks approved 😂 Friendship confirmed ✨</p>
-            <button onclick="this.closest('.modal').remove()">Close 💕</button>
-        </div>
-    `;
-
-    document.body.appendChild(memeModal);
-
-    launchConfetti();
-}
-
-/* Confetti */
-function launchConfetti() {
-    for(let i=0;i<50;i++){
-        const heart=document.createElement("div");
-        heart.className="heart";
-        heart.innerHTML="💗";
-        heart.style.left=Math.random()*100+"vw";
-        document.body.appendChild(heart);
-        setTimeout(()=>heart.remove(),6000);
-    }
-}
-setInterval(() => {
-    const laugh = document.createElement("div");
-    laugh.className = "heart";
-    laugh.innerHTML = "😂";
-    laugh.style.left = Math.random() * 100 + "vw";
-    document.body.appendChild(laugh);
-    setTimeout(() => laugh.remove(), 5000);
-}, 2000);
-
-
 </script>
 
 </body>
 </html>
-
-
